@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background-color: #A6F1E0;
+    font-size: 16px;
+}
+
+#underline {
+    text-decoration: underline;
+    color: #354d47a2;
+}
+
+.attention {
+    color: #c807f9d4;
+}
+
+.lessattention {
+    color: #354d47a2;
+}
+
+
