@@ -1,9 +1,31 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url('blueimage.webp');
+    background: url('freeblue.jpg') rgb(166, 96, 233);
+    
+    /* same thing as "background: url('freeblue.jpg') rgb(166, 96, 233);"
+    background-color: rgb(166, 96, 233);
+    background-image: url(blueimage.webp);
+     */
+}
+
+.mylist {
+    /* you can do somthing here:
+    list-style-image: url(flower.jpeg); 
+    list-style-type: none;
+    */
+    
+    list-style-type: circle;
 }
 
 header {
     color: white;
+
+    background-image: url(flower.jpeg);
+    background-repeat: no-repeat;
+    background-position: 200px;
+
+    /* if you want to put these in the same line,
+    background: url(flower.jpeg) top right no-repeat;
+     */
 }
 
