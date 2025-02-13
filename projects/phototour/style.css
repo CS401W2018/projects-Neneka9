@@ -8,14 +8,19 @@ body {
     background: url(mountain.jpg) rgb(63, 122, 63);
 }
 
-nav a {
-    color: blue;
-}
-
 header {
     background-image: url();
+}
+
+nav a {
+    color: blue;
 }
 
 .current {
     color: blueviolet;
 }
+
+.mylist {
+    list-style-image: url(mapred.svg.png);
+}
+
