@@ -1,0 +1,14 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background: url(mountain.jpg) rgb(63, 122, 63);
+}
+
+
+nav a {
+    color: blue;
+}
+
+.current {
+    color: blueviolet;
+}
