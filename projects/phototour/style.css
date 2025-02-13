@@ -18,6 +18,7 @@ nav a {
 
 .current {
     color: blueviolet;
+    text-decoration-line: none;
 }
 
 .mylist {
