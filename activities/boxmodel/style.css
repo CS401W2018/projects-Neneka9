@@ -29,6 +29,10 @@ header h1 {
 
 .wave img {
     width: 100%;
+    
+}
+
+.wave {
     border: thin solid black;
     text-align: center;
     margin: 10px auto;
