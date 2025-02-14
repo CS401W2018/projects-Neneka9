@@ -1,0 +1,18 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: burlywood;
+    padding: 30px;
+    margin: 25px;
+}
+
+/* header h1 {
+    border: 5px solid #000;
+} */
+
+header h1 {
+    border: 5px dashed #000;
+    
+}
