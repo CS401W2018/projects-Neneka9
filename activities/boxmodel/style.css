@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: burlywood;
+    padding: 30px 10px;
+    margin: 25px;
+}
+
+header h1 {
+    border: 5px solid #000;
+}
+
+/* alternative
+header h1 {
+    border: 5px dashed #000;
+}
+header h1 {
+    border: 5px dotted #000;
+} 
+*/
+
+.boxa {
+    background-color: #5ec7ed;
+    color:white;
+    padding: 0 300px;
+}
+
+.wave img {
+    width: 100%;
+    border: thin solid black;
+    text-align: center;
+    margin: 10px auto;
+}
