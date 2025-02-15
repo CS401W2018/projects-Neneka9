@@ -24,7 +24,17 @@ header h1 {
 .boxa {
     background-color: #5ec7ed;
     color:white;
+    
+}
+
+.boxb {
+    background-color: rgb(231, 127, 144);
     padding: 0 300px;
+}
+
+.boxc {
+    background: #a9d46b;
+    margin: 0 50px;
 }
 
 .wave img {
