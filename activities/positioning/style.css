@@ -6,8 +6,8 @@ nav a {
     background: aquamarine;
     display: block;
     padding: 10px 10px;
+    margin-right: 90%;
     border-bottom: 3px solid #fff;
-    float: right;
 }
 
 .map {
