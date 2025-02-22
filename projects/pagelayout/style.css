@@ -17,7 +17,10 @@ h1 {
     text-shadow: 2px 3px 3px rgb(146, 254, 218);
     text-transform: uppercase;
     height: 50px;
+    padding-top: 15px;
+    background-image: url(bg.jpg);
 }
+
 
 .left {
     padding-left: 10px;
@@ -72,7 +75,7 @@ nav a:hover {
 }
 
 .text {
-    margin-top: 70px;
+    margin: 50px 50px;
     line-height: 1.8;
 }
 
