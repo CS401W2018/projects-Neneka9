@@ -2,8 +2,39 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* header { 
-    grid-area: header;
+/*  
+#wrapper {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-areas: "header header header"
+                         "lside center rside"
+                         "footer footer footer";
+}
+
+nav {
+    grid-area: "header";
+}
+
+header { 
+    grid-area: "header";
+}
+
+#lside {
+    grid-area: "lside";
+    background-color: beige;
+}
+
+#rside {
+    grid-area: "rside";
+    background-color: beige;
+}
+
+footer {
+    grid-area: "footer";
+}
+
+main {
+    grid-area: center;
 }
 */
 
