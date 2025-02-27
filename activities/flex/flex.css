@@ -34,3 +34,12 @@ nav a {
     width: 100px;
     margin: 10px;
 }
+
+.homework {
+    margin: 50px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
