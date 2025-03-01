@@ -2,15 +2,54 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header {
-
-}
-
 nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 nav a {
     display: block;
 }
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: "left right right right right";
+    gap: 10px;
+}
+
+.left-screen {
+    grid-area: left;
+}
+
+
+main {
+    padding-right:200px ;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    grid-area: right;
+}
+
+figure{
+    width: 25%;
+    border: 1.5px solid;
+    box-shadow: 0 3px 15px black;
+
+}
+
+figure img{
+    width: 100%;
+}
+
+figcaption {
+    padding: 5px;
+}
+
+
+
+.link-group{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
