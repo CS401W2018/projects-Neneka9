@@ -31,7 +31,6 @@ nav a:hover {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    
 }
 
 .card {
@@ -50,6 +49,10 @@ nav a:hover {
 
 .card h2 {
     text-align: center;
+}
+
+.feature h2 {
+    margin-top: 85px;
 }
 
 @media ONLY screen AND (max-width: 900px) {
