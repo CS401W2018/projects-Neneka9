@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+</head>
+<body>
+    <header>
+        <h1>Web Design</h1>
+    </header>
+    <nav>
+    </nav>
+    <main>
+        <table border="1">
+            <thead>
+            <tr>
+                <th>Department</th>
+                <th>Number</th>
+                <th>Time</th>
+                <th>Location</th>
+                <th>Credits</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th colspan="5">Winter 2025</th>
+            </tr>
+            <tr>
+                <td>SSAC</td>
+                <td rowspan="2">140</td>
+                <td>9:00-9:50 AM</td>
+                <td>CAC115</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>CS</td>
+
+                <td>11:00-11:50 AM</td>
+                <td>P2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>CHIN</td>
+                <td>102</td>
+                <td>12:00-12:50 PM</td>
+                <td>ST2C</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>ACCT</td>
+                <td>203</td>
+                <td>1:00-1:50 PM</td>
+                <td>HGB115</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>ECON</td>
+                <td>200</td>
+                <td>1:30-2:45 PM</td>
+                <td>HGB275</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <th colspan="5">Spring 2025</th>
+            </tr>
+            <tr>
+                <td>MATH</td>
+                <td>121</td>
+                <td>1:30-2:45 PM</td>
+                <td>HGB275</td>
+                <td>3</td>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr>
+                <th id="total-credits" colspan="4">total Credita</th>
+                <td headers="total-credits">17</td>
+            </tr>
+        </tfoot>
+        </table>
+
+        <hr>
+        <h2>ENGAGEMENT</h2>
+        <h3>1. When do you use a table?</h3>
+        <p>When you put data, schedule, etc.</p>
+        <h3>2. When do you not use a table?</h3>
+        <p>When you layout the elements</p>
+        <h3>3. When do you need to do extra work for table accessibility?</h3>
+        <p>Screen readers. use "th" instead of "td." </p>
+        <p>"thead" is for the 1st row (labels)</p>
+        <p>"tbody" is for data</p>
+        <p>"tfooter" is averages, totals, summary of the data.</p>
+    </main>
+    <footer>
+        <p>&copy; 2025 sloth student</p>
+    </footer>
+</body>
+</html>
