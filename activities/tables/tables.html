@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tables</title>
+    <link rel="stylesheet" href="table.css">
 </head>
 <body>
     <header>
@@ -12,7 +13,9 @@
     <nav>
     </nav>
     <main>
-        <table border="1">
+        <h1>Tables</h1>
+        <table class="schedule">
+            <caption>Course Schedule</caption>
             <thead>
             <tr>
                 <th>Department</th>
@@ -24,7 +27,7 @@
             </thead>
             <tbody>
             <tr>
-                <th colspan="5">Winter 2025</th>
+                <th colspan="5" class="winter">Winter 2025</th>
             </tr>
             <tr>
                 <td>SSAC</td>
@@ -62,7 +65,7 @@
                 <td>3</td>
             </tr>
             <tr>
-                <th colspan="5">Spring 2025</th>
+                <th colspan="5" class="spring">Spring 2025</th>
             </tr>
             <tr>
                 <td>MATH</td>
@@ -87,10 +90,16 @@
         <h3>2. When do you not use a table?</h3>
         <p>When you layout the elements</p>
         <h3>3. When do you need to do extra work for table accessibility?</h3>
-        <p>Screen readers. use "th" instead of "td." </p>
+        <p>Screen readers. Use "th" instead of "td." </p>
         <p>"thead" is for the 1st row (labels)</p>
         <p>"tbody" is for data</p>
         <p>"tfooter" is averages, totals, summary of the data.</p>
+        <h2>NEW ENGAGEMENT</h2>
+        <h3>1. Why don't we use the border attribute?</h3>
+        <p>If we use the border attribute, there is no way to change the style like get rid of border or change the color.</p>
+        <p>And also, we would get a validation eroor.</p>
+        <h3>2. What is the easiest way to color every other row a different color?</h3>
+        <p>There is a function to selelct row automatically, ":nth-child(odd)." Or use a class name and apply colors in CSS.</p>
     </main>
     <footer>
         <p>&copy; 2025 sloth student</p>
