@@ -2,33 +2,54 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     color: black;
     font-size: 14px;
+    margin: 0 auto;
 }
+
 
 header {
     text-align: center;
     background-color: rgb(221, 101, 205);
     color: white;
     font-style: oblique;
-    padding: 1em 0;
+    padding: 20px 0 3px 0;
+    margin: 0 auto;
 }
 
 nav {
-    margin: 0 auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    background-color: rgb(221, 101, 205);
+    border-top: 1px solid white;
 }
+
 
 nav a {
     display: block;
     margin: 10px;
-    background-color: black;
-    color: white;
-    padding: 4px 10px;
+    color: rgba(255, 247, 247, 0.898);
+    text-decoration: none;
+
 }
 
 .container {
+    margin-top: 20px;
     display: flex;
     flex-direction: row-reverse;
+
+}
+
+aside {
+    width: 30%;
+    padding: 30px 10% 0 0;
+}
+
+main {
+    width: 70%;
+    padding: 0 10%;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+
 }
 
 .schedule {
@@ -38,10 +59,9 @@ nav a {
     border-collapse: collapse;
 }
 
-.schedule th, .schedule td {
-    border-bottom: 1px solid black;
-    text-align: center;
-    padding: 2px 8px;
+caption {
+    padding: 10px 0 3px 0;
+    font-weight: bold;
 }
 
 .schedule thead {
@@ -49,6 +69,16 @@ nav a {
     color: white;
 }
 
+.schedule th, .schedule td {
+    border-bottom: 1px solid black;
+    text-align: center;
+    padding: 2px 8px;
+}
+
 .schedule tbody tr:nth-child(even) {
     background-color: rgb(199, 197, 197);
+}
+
+footer {
+    text-align: center;
 }
