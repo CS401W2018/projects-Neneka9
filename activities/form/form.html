@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Web Design</h1>
+    </header>
+    <nav>
+
+    </nav>
+    <main>
+        <form action="processing.html" method="get">
+            <div class="form-row">
+                <label for="firstname">First Name:</label>
+                <input type="text" name="firstname" required="required" placeholder="first name" id="firstname">
+            </div>
+            <div class="form-row">
+                <label for="email">Email:</label>
+                <input type="email" name="email" required value="NN@go.byu" id="email">
+            </div>
+            <div>
+                <label for="pass">password:</label>
+                <input type="password" name="password" id="pass">
+            </div>
+            <div>
+                <label for="state">State:</label>
+                <select name="state" id="state">
+                    <option value="blank"></option>
+                    <option value="CO">Colorado</option>
+                    <option value="HI" selected>Hawaii</option>
+                    <option value="UT">Utah</option>
+                </select>
+            </div>
+            <div>
+                <div>
+                    <label for="year">Year in School</label>
+                </div>
+                <div>
+                    <label><input type="radio" name="year" value="Freshman">Freshman</label>
+                    <label><input type="radio" name="year" value="Sophmore">Sophmore</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <input type="submit">
+            </div>
+        </form>
+        <h2>ENGAGEMENT</h2>
+        <h3>1. The form tag has an "action" attribute. What does it do?</h3>
+        <p>It connects to the website page to jump after you type data.</p>
+        <h3>2. The form tag has a "method" attribute. What does it do?</h3>
+        <p>It decides how to store the data that you type.</p>
+        <h3>3. What is the difference between a "POST" and a "GET"?</h3>
+        <p>When you use "get", the data that you type in inputs shows in URL, while when you use "post", the data goes into different place.</p>
+        <p>When you create the account, use "get."</p>
+        <p>"pose" is to change something with websites.</p>
+        <p>Get Request: google search engine</p>
+        <h4>MEMO</h4>
+        <p>label is for accessibility.</p>
+        <p>when you change some infromation for your account, use value or selected to put the information instead of fillinf all information.</p>
+        <p>required is forcing you to fill the blank up.</p>
+        <p>When you make radio botton, you should set the same name to select one of them.</p>
+        <p>When you put label inside of label, you can click the letters to choose the radio.</p>
+
+    </main>
+    <footer>
+        <p>&copy; 2025 sloth student</p>
+    </footer>
+</body>
+</html>
