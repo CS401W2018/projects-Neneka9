@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form.css">
 </head>
 <body>
     <header>
@@ -15,39 +15,50 @@
     </nav>
     <main>
         <form action="processing.html" method="get">
-            <div class="form-row">
-                <label for="firstname">First Name:</label>
-                <input type="text" name="firstname" required="required" placeholder="first name" id="firstname">
-            </div>
-            <div class="form-row">
-                <label for="email">Email:</label>
-                <input type="email" name="email" required value="NN@go.byu" id="email">
-            </div>
-            <div>
-                <label for="pass">password:</label>
-                <input type="password" name="password" id="pass">
-            </div>
-            <div>
-                <label for="state">State:</label>
-                <select name="state" id="state">
-                    <option value="blank"></option>
-                    <option value="CO">Colorado</option>
-                    <option value="HI" selected>Hawaii</option>
-                    <option value="UT">Utah</option>
-                </select>
-            </div>
-            <div>
-                <div>
-                    <label for="year">Year in School</label>
+            <fieldset>
+                <legend>Account Info</legend>
+                <div class="form-row">
+                    <label for="firstname">First Name:</label>
+                    <input type="text" name="firstname" required="required" placeholder="first name" id="firstname">
                 </div>
-                <div>
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" required value="NN@go.byu" id="email">
+                </div>
+                <div class="form-row">
+                    <label for="pass">password:</label>
+                    <input type="password" name="password" id="pass">
+                </div>
+                <div class="form-row">
+                    <label for="state">State:</label>
+                    <select name="state" id="state">
+                        <option value="blank"></option>
+                        <option value="CO">Colorado</option>
+                        <option value="HI" selected>Hawaii</option>
+                        <option value="UT">Utah</option>
+                    </select>
+                </div>
+                <div class="radio-row">
+                    <div class="form-spacer">Year in School</div>
                     <label><input type="radio" name="year" value="Freshman">Freshman</label>
-                    <label><input type="radio" name="year" value="Sophmore">Sophmore</label>
+                    <label><input type="radio" name="year" value="Sophmore" checked>Sophmore</label>
                 </div>
-            </div>
-            <div class="form-row">
-                <input type="submit">
-            </div>
+                <!-- Second Day -->
+                <div class="radio-row">
+                    <div class="form-spacer"></div>
+                    <label><input type="checkbox" name="agree" id="agree" checked>Remeber Me</label>
+                </div>
+                <div class="form-row">
+                    <label for="comments">Comments</label>
+                    <textarea name="comments" id="comments"></textarea>
+                </div>
+
+                
+                <div class="form-row">
+                    <div class="form-spacer"></div>
+                    <input type="submit">
+                </div>
+            </fieldset>
         </form>
         <h2>ENGAGEMENT</h2>
         <h3>1. The form tag has an "action" attribute. What does it do?</h3>
@@ -66,6 +77,12 @@
         <p>required is forcing you to fill the blank up to go to next page.</p>
         <p>When you make radio botton, you should set the same name to select one of them.</p>
         <p>When you put label inside of label, you can click the letters to choose the radio.</p>
+
+        <h2>NEW ENGAGEMENT</h2>
+        <h3>1. What are different ways to style your form?</h3>
+        <p>Ex. fieldset or legend</p>
+        <h3>2. Why does the professor like to use flex?</h3>
+        <p>Because flex can allow us to keep the content size and we needs a little work to adjust.</p>
 
     </main>
     <footer>
