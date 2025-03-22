@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feedback Form</title>
     <link rel="stylesheet" href="form.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
     <header>
@@ -17,46 +18,49 @@
         <form action="submit.html" method="get">
             <fieldset>
                 <legend>Feedback</legend>
-                <div class="first-row">
-                    <label for="firstname">First Name</label>
-                    <input type="text" name="firstname" required placeholder="First Name" id="firstname">
-                </div>
-                <div class="first-row">
-                    <label for="lastname">Last Name</label>
-                    <input type="text" name="lastname" required placeholder="Last Name" id="lastname">
-                </div>
-                <div class="first-row">
-                    <label for="studenid">Student ID</label>
-                    <input type="text" name="studentid" required placeholder="Student ID" id="studentid">
-                </div>
-                <div class="first-row">
-                    <label for="year">Year</label>
-                    <select name="year" required id="year">
-                        <option value="blank"></option>
-                        <option value="1">Freshman</option>
-                        <option value="2">Sophomore</option>
-                        <option value="3">Junior</option>
-                        <option value="4">Senior</option>
-                    </select>
-                </div>
-                <div class="satisfaction">
-                    <p>How satisfied?</p>
+                <!-- <div class="leftright"> -->
                     <div class="form-row">
-                        <label><input type="radio" name="satisfaction" required value="1">No</label>
-                        <label><input type="radio" name="satisfaction" required value="2">Not Really</label>
-                        <label><input type="radio" name="satisfaction" required value="3">Even</label>
-                        <label><input type="radio" name="satisfaction" required value="4">Good</label>
-                        <label><input type="radio" name="satisfaction" required value="5">Great</label>
+                        <label for="firstname">First Name</label>
+                        <input type="text" name="firstname" required placeholder="First Name" id="firstname">
                     </div>
+                    <div class="form-row">
+                        <label for="lastname">Last Name</label>
+                        <input type="text" name="lastname" required placeholder="Last Name" id="lastname">
+                    </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <label for="studenid">Student ID</label>
+                        <input type="text" name="studentid" required placeholder="Student ID" id="studentid">
+                    </div>
+                    <div class="form-row">
+                        <label for="year">Year</label>
+                        <select name="year" required id="year">
+                            <option value="blank"></option>
+                            <option value="1">Freshman</option>
+                            <option value="2">Sophomore</option>
+                            <option value="3">Junior</option>
+                            <option value="4">Senior</option>
+                        </select>
+                    </div>
+                <!-- </div> -->
+                <div class="radio-row">
+                    <p>How satisfied?</p>
+                    <!-- <div class="radio"> -->
+                        <label><input type="radio" name="satisfaction" required value="1">Not Good</label>
+                        <label><input type="radio" name="satisfaction" required value="2">Even</label>
+                        <label><input type="radio" name="satisfaction" required value="3">Good</label>
+                    <!-- </div> -->
                 </div>
-                <div class="form-row">
+                <div class="join">
+                    <div class="spacer"></div>
                     <label><input type="checkbox" name="again">I will join again</label>
                 </div>
                 <div class="form-row comments">
                     <label for="comments">Comments</label>
                     <textarea name="comments" id="comments" placeholder="Please write any feedback here."></textarea>
                 </div>
-                <div class="form-row submit">
+                <div class="submit">
                     <input type="submit">
                 </div>
 

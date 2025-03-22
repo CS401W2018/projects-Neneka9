@@ -15,6 +15,7 @@ fieldset {
     background-color: white;
     display: flex;
     flex-wrap: wrap;
+    margin: 0 auto;
 }
 
 legend {
@@ -23,28 +24,83 @@ legend {
     border: 3px dotted coral;
 }
 
-.first-row {
-    margin: 10px;
-    width: 200px;
-}
 
-.form-row {
-    margin: 10px;
-}
-
-
-
-.first-row label, .form-row label {
-    width: 150px;
-    margin: 10px;
-}
-
-
-.comments {
+.form-row, .radio-row, .join {
     display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 400px;
+    margin: 10px;
 }
+
+.form-row label, .radio-row p, .join .spacer {
+    width: 100px;
+    text-align: right;
+}
+
+.form-row input {
+    width: 200px;
+    border: 2px solid gray;
+}
+
+.comments textarea {
+    width: 200px;
+    height: 150px;
+    border: 2px solid gray;
+}
+
+input:not([type="submit"]):hover, select:hover, textarea:hover {
+    background-color: gray;
+
+}
+
+input:not([type="submit"]):focus, select:focus, textarea:focus {
+    color: rgb(244, 52, 161);
+}
+
+/* 
+.leftright{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+} */
 
 .submit {
+    margin-top: 50px;
     width: 100%;
     text-align: center;
+}
+
+input[type="submit"] {
+    font-size: 1.6em;
+    border-radius: 15px;
+    padding: 0 10px;
+}
+
+footer {
+    color: white;
+    text-align: center;
+}
+
+.radio-row p{
+    margin: 0;
+}
+
+@media ONLY screen AND (max-width: 650px) {
+    .form-row, .radio-row, .join {
+        flex-direction: column;
+    }
+    .form-row label, .radio-row p, .join .spacer {
+        text-align: left;
+    }
+    .radio-row{
+        display: flex;
+        flex-direction: column;
+    }
+    input[type="submit"] {
+        font-size: 2em;
+        border-radius: 15px;
+        padding: 10px 50px;
+    }
+
 }
