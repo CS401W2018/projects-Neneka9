@@ -14,7 +14,7 @@
 
     </nav>
     <main>
-        <form action="processing.html" method="get">
+        <form action="processing.html" method="get" id="myForm">
             <fieldset>
                 <legend>Account Info</legend>
                 <div class="form-row">
@@ -28,6 +28,10 @@
                 <div class="form-row">
                     <label for="pass">password:</label>
                     <input type="password" name="password" id="pass">
+                </div>
+                <div class="form-row">
+                    <label for="pass">Age:</label>
+                    <input type="number" name="age" id="age">
                 </div>
                 <div class="form-row">
                     <label for="state">State:</label>
@@ -88,9 +92,48 @@
         <h3>2. Why does the professor like to use flex?</h3>
         <p>Because flex can allow us to keep the content size and we needs a little work to adjust.</p>
 
+        <h2>New New ENGAGEMENT</h2>
+        <h3>1. What is JavaScript? How did it get its name?</h3>
+        <p>Microsoft created Java. They wanted people to find it easily, connecting the name even though those are different.</p>
+        <h3>2. What are the two ways you can run JavaScript?</h3>
+        <p>Front-end (DOM) & node JavaScript</p>
+        <h3>3. What was the most popular front-end js library?</h3>
+        <p>JQuery</p>
+        <h3>4. What is the most popular front-end js library today?</h3>
+        <p>React.js made by Facebook</p>
+
     </main>
     <footer>
         <p>&copy; 2025 sloth student</p>
     </footer>
+    <script>
+        document.getElementById('myForm').addEventListener('submit', function(event){
+            event.preventDefault();
+            // alert("Form Submitted");
+
+            const firstname = document.getElementById('firstname').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('pass').value;
+            const age = document.getElementById('age').value;
+
+            if (!firstname) {
+                alart("You need to enter your name.");
+                return;
+            }
+
+            if (!age || age<18) {
+                alart("You need to be 18");
+                return;
+            }
+
+            const formData = {
+                firstname: firstname,
+                email: email,
+                password: pass
+
+            };
+            console.log(formData);
+        });
+    </script>
 </body>
 </html>

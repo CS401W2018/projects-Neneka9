@@ -51,6 +51,7 @@ legend {
     text-align: right;
 }
 
+
 .form-row input:not([type="submit"]):focus {
     background-color: white;
 }
