@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Design</title>
+    <link rel="stylesheet" href="formprocessing.css">
+</head>
+<body>
+    <header>
+        <h1>Interests</h1>
+    </header>
+    <main>
+        <form action="processing.html" method="get" id="form">
+            <fieldset>
+                <legend>Your Interests</legend>
+                <div class="form-row">
+                    <label for="firstname">First Name:</label>
+                    <input type="text" name="firstname" required id="firstname">
+                </div>
+                <div class="form-row">
+                    <label for="lastname">Last Name:</label>
+                    <input type="text" name="firstname" required id="lastname">
+                </div>
+                <div class="form-row">
+                    <label for="pass">Age:</label>
+                    <input type="number" name="age" id="age">
+                </div>
+                <div class="form-row">
+                    <label for="interests">Interests</label>
+                    <select name="interests" id="interests">
+                        <option value="blank" selected>—</option>
+                        <option value="1">Language</option>
+                        <option value="2">History</option>
+                        <option value="3">Art</option>
+                        <option value="4">Sports</option>
+                        <option value="5">Travel</option>
+                        <option value="6">Movies</option>
+                        <option value="7">Writing</option>
+                        <option value="8">Investing</option>
+                        <option value="9">Cooking</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="comments">Comments</label>
+                    <textarea name="comments" id="comments"></textarea>
+                </div>
+                <div class="form-row">
+                    <div class="form-spacer"></div>
+                    <input type="submit">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 sloth student</p>
+    </footer>
+    <script src="formprocessing.js"></script>
+</body>
+</html>
