@@ -11,19 +11,20 @@
         <h1>Interests</h1>
     </header>
     <main>
+        <div id="message"></div>
         <form action="processing.html" method="get" id="form">
             <fieldset>
                 <legend>Your Interests</legend>
                 <div class="form-row">
                     <label for="firstname">First Name:</label>
-                    <input type="text" name="firstname" required id="firstname">
+                    <input type="text" name="firstname" id="firstname">
                 </div>
                 <div class="form-row">
                     <label for="lastname">Last Name:</label>
-                    <input type="text" name="firstname" required id="lastname">
+                    <input type="text" name="firstname" id="lastname">
                 </div>
                 <div class="form-row">
-                    <label for="pass">Age:</label>
+                    <label for="age">Age:</label>
                     <input type="number" name="age" id="age">
                 </div>
                 <div class="form-row">
@@ -45,7 +46,7 @@
                     <label for="comments">Comments</label>
                     <textarea name="comments" id="comments"></textarea>
                 </div>
-                <div class="form-row">
+                <div class="submit">
                     <div class="form-spacer"></div>
                     <input type="submit">
                 </div>

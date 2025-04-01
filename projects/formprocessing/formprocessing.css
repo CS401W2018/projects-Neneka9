@@ -3,12 +3,43 @@ body {
     
 }
 
+header {
+    text-align: center;
+    text-decoration: underline rgb(228, 133, 8);
+    text-shadow: 2px 0 4px rgb(171, 170, 170);
+}
+
 main {
     color: rgb(228, 133, 8);
 }
 
-.form-row label {
-    width: 300px;
-
+legend {
+    background-color: rgb(86, 85, 85);
+    color: white;
+    padding: 4px;
 }
 
+.form-row {
+    display: flex;
+    gap: 10px;
+    margin: 15px;
+}
+
+.form-row label {
+    width: 150px;
+    text-align: right;
+}
+
+.form-row input, .form-row textarea, .form-row select {
+    width: 150px;
+}
+
+select {
+    text-align: center;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
