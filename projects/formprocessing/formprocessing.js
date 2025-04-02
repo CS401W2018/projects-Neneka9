@@ -23,12 +23,13 @@ document.getElementById('form').addEventListener('submit', function(event) {
     }
 
     const formData = {
-        firstname: firstname,
-        lastname: lastname,
+        first: first,
+        last: last,
         interests: interests,
     };
 
     console.log(formData);
+
     const xhr = new XMLHttpRequest();
     xhr.open("GET", "formprocessing.json", true);
     xhr.setRequestHeader("Constent-Type", "application/json;charset=UTF-8") ;
@@ -42,6 +43,6 @@ document.getElementById('form').addEventListener('submit', function(event) {
         }
     };
     xhr.send(JSON.stringify(formData));
-    console.log(formData)
+    console.log(formData);
 
 });
