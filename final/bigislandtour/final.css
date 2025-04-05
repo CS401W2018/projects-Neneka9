@@ -29,6 +29,11 @@ a:hover {
 .picture {
     text-align: center;
 }
+
+.photodiv {
+    max-width: 85%;
+}
+
 .table caption {
     padding-top: 15px;
 }
@@ -47,4 +52,18 @@ a:hover {
 
 .table td {
     padding: 10px;
+}
+
+@media ONLY screen AND (max-width: 700px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+        gap: 3px;
+    }
+
+    nav a {
+        padding: 3px 0 5px 0;
+        border-bottom: 1px solid white;
+
+    }
 }
