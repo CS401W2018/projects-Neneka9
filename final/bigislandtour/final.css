@@ -30,6 +30,7 @@ a:hover {
     text-align: center;
 }
 
+
 .photodiv {
     max-width: 85%;
 }
@@ -43,6 +44,8 @@ a:hover {
     box-shadow: 5px 2px 3px rgba(30, 30, 30, 0.3);
     border-spacing: 0;
     border-collapse: collapse;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .table tr, .table th {
@@ -64,6 +67,12 @@ a:hover {
     nav a {
         padding: 3px 0 5px 0;
         border-bottom: 1px solid white;
-
     }
+
+    figure {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
 }
