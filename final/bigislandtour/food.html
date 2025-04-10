@@ -19,7 +19,62 @@
         <a href="food.html" class="now">Food</a>
     </nav>
     <main>
+        <h2>- What do you want to eat? -</h2>
+        <p>On the Big Island, you can enjoy a lot of local food. While many dishes are similar to those on Oʻahu, they’re not exactly the same. Try them and notice the differences in flavor or texture.</p>
+        <p>I believe there are still many hidden spots to discover! I'd love for you to share your recommendations! Feel free to share anything with us — restaurants, markets, sweets, drinks, and more!</p>
+
+        <form action="get">
+            <fieldset>
+            <legend>Recommend food spots</legend>
+            <div class="form-row">
+                <label for="foodcategory">What type of food is it?</label>
+                <select name="foodcategory" id="foodcategory">
+                    <option value="0">—</option>
+                    <option value="1">meal</option>
+                    <option value="2">drink</option>
+                    <option value="3">sweet</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <label for="occasion">When is it good for?</label>
+                <select name="occasion" id="occasion">
+                    <option value="0">—</option>
+                    <option value="1">breakfast</option>
+                    <option value="2">lunch</option>
+                    <option value="3">dinner</option>
+                    <option value="4">snacking</option>
+                    <option value="5">light meal</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <label for="near">Where was it near?</label>
+                <input type="text" name="near" id="near">
+            </div>
+            <div class="form-row">
+                <label for="name">What is the name?</label>
+                <input type="text" name="name" id="name" placeholder="If you don't know the exact name, you can type how yout type to search.">
+            </div>
+            <div class="form-row">
+                <label for="cost">How much was it around?</label>
+                <select name="cost" id="cost">
+                    <option value="0">0</option>
+                    <option value="1">$1 - $10</option>
+                    <option value="2">$10 - $20</option>
+                    <option value="3">$20 - $30</option>
+                    <option value="4">$30 - $40</option>
+                    <option value="5">$40 - $50</option>
+                    <option value="6">$50 or more</option>
+                </select>
+            </div>
+            
+            </fieldset>
+        </form>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d717077.6701701774!2d-156.0195482350008!3d19.791339918059418!3m2!1i1024!2i768!4f13.1!2m1!1sbig%20island%20food!5e0!3m2!1sja!2sus!4v1744187753263!5m2!1sja!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
 
     </main>
+    <footer>
+        <p>&copy; 2025 sloth student</p>
+    </footer>
 </body>
 </html>

@@ -7,7 +7,6 @@ header {
     background-color: #009048;
     color: white;
     padding: 10px;
-    margin-top: 1ch ;
 }
 
 nav {
@@ -26,10 +25,17 @@ a:hover {
     text-decoration: none;
 }
 
+
 .picture {
     text-align: center;
 }
 
+ .borderpicture {
+    border: 2px solid black;
+ }
+.picture figcaption {
+    margin-top: 5px;
+}
 
 .photodiv {
     max-width: 85%;
@@ -55,7 +61,17 @@ a:hover {
 
 .table td {
     padding: 10px;
+    justify-content: center;
 }
+
+.map {
+    width: 60%;
+    max-width: 600px;
+    position: relative;
+    left: 23%;
+    border: 3px solid #73AD21;
+}
+
 
 @media ONLY screen AND (max-width: 700px) {
     nav {
