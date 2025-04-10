@@ -18,7 +18,7 @@
         <a href="snorkeling.html">Snorkeling</a>
         <a href="food.html" class="now">Food</a>
     </nav>
-    <main>
+    <main class="wrapper">
         <h2>- What do you want to eat? -</h2>
         <p>On the Big Island, you can enjoy a lot of local food. While many dishes are similar to those on Oʻahu, they’re not exactly the same. Try them and notice the differences in flavor or texture.</p>
         <p>I believe there are still many hidden spots to discover! I'd love for you to share your recommendations! Feel free to share anything with us — restaurants, markets, sweets, drinks, and more!</p>
@@ -66,14 +66,25 @@
                     <option value="6">$50 or more</option>
                 </select>
             </div>
-            
+            <div class="form-row">
+                <label><input type="radio" name="satisfaction" value="5">very sas=tisfied</label>
+                <label><input type="radio" name="satisfaction" value="4">satisfied</label>
+                <label><input type="radio" name="satisfaction" value="3">neutral</label>
+            </div>
+            <div class="form-row">
+            <label for="comments">WHy?</label>
+            <textarea name="comments" id="comments"></textarea>
+            </div>
+            <div class="submit">
+            <input type="submit">
+            </div>
             </fieldset>
         </form>
-
-        <iframe src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d717077.6701701774!2d-156.0195482350008!3d19.791339918059418!3m2!1i1024!2i768!4f13.1!2m1!1sbig%20island%20food!5e0!3m2!1sja!2sus!4v1744187753263!5m2!1sja!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
-
+        
+        <iframe src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d717077.6701701774!2d-156.0195482350008!3d19.791339918059418!3m2!1i1024!2i768!4f13.1!2m1!1sbig%20island%20food!5e0!3m2!1sja!2sus!4v1744187753263!5m2!1sja!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"> </iframe>
+        
     </main>
-    <footer>
+    <footer class="wrapper">
         <p>&copy; 2025 sloth student</p>
     </footer>
 </body>

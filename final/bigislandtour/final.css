@@ -1,5 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
 }
 
 header {
@@ -25,17 +26,22 @@ a:hover {
     text-decoration: none;
 }
 
+.wrapper {
+    width: 700px;
+    margin: 0 auto;
+}
 
 .picture {
     text-align: center;
+    width: 640px;
+    
 }
 
- .borderpicture {
-    border: 2px solid black;
- }
 .picture figcaption {
     margin-top: 5px;
+    border-bottom: 1px solid black;
 }
+
 
 .photodiv {
     max-width: 85%;
@@ -72,7 +78,9 @@ a:hover {
     border: 3px solid #73AD21;
 }
 
-
+.causion {
+    font-size: 20px;
+}
 @media ONLY screen AND (max-width: 700px) {
     nav {
         flex-direction: column;
