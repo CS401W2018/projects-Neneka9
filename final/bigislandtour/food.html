@@ -23,7 +23,7 @@
         <p>On the Big Island, you can enjoy a lot of local food. While many dishes are similar to those on Oʻahu, they’re not exactly the same. Try them and notice the differences in flavor or texture.</p>
         <p>I believe there are still many hidden spots to discover! I'd love for you to share your recommendations! Feel free to share anything with us — restaurants, markets, sweets, drinks, and more!</p>
 
-        <form action="get">
+        <form action="submit.html" method="get">
             <fieldset>
             <legend>Recommend food spots</legend>
             <div class="form-row">
@@ -48,11 +48,11 @@
             </div>
             <div class="form-row">
                 <label for="near">Where was it near?</label>
-                <input type="text" name="near" id="near">
+                <textarea name="near" id="near"></textarea>
             </div>
             <div class="form-row">
                 <label for="name">What is the name?</label>
-                <input type="text" name="name" id="name" placeholder="If you don't know the exact name, you can type how yout type to search.">
+                <input type="text" name="name" id="name" placeholder="If you don't know the exact name, you can type how yout type to search." required>
             </div>
             <div class="form-row">
                 <label for="cost">How much was it around?</label>
@@ -66,17 +66,22 @@
                     <option value="6">$50 or more</option>
                 </select>
             </div>
-            <div class="form-row">
-                <label><input type="radio" name="satisfaction" value="5">very sas=tisfied</label>
-                <label><input type="radio" name="satisfaction" value="4">satisfied</label>
-                <label><input type="radio" name="satisfaction" value="3">neutral</label>
+            <div class="radio-row">
+                <p>How satisfied were you?</p>
+                <div class="radio">
+                    <label><input type="radio" name="satisfaction" value="5">very satisfied</label>
+                    <label><input type="radio" name="satisfaction" value="4">satisfied</label>
+                    <label><input type="radio" name="satisfaction" value="3">neutral</label>
+                </div>
             </div>
             <div class="form-row">
-            <label for="comments">WHy?</label>
+            <label for="comments">Please share your experience briefly.</label>
             <textarea name="comments" id="comments"></textarea>
             </div>
             <div class="submit">
-            <input type="submit">
+                <div class="submit-space"></div>
+                <input type="submit">
+                <div class="submit-space"></div>
             </div>
             </fieldset>
         </form>

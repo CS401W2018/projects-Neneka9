@@ -75,6 +75,37 @@ a:hover {
     justify-content: center;
 }
 
+.causion {
+    font-size: 20px;
+}
+
+.form-row, .radio-row {
+    display: flex;
+    gap: 10px;
+    margin: 15px;
+}
+
+.form-row label, .form-row p, .radio-row p {
+    width: 200px;
+    text-align: right;
+    font-size: 18px;
+}
+
+.form-row input, .form-row select, .form-row textarea {
+    width: 200px;
+}
+
+.submit {
+    text-align: center;
+    font-size: 25px;
+    margin: 50px 0 15px 0;
+}
+
+.submit input {
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
 .map {
     width: 60%;
     max-width: 600px;
@@ -83,9 +114,8 @@ a:hover {
     border: 3px solid #73AD21;
 }
 
-.causion {
-    font-size: 20px;
-}
+
+
 @media ONLY screen AND (max-width: 700px) {
     nav {
         flex-direction: column;
