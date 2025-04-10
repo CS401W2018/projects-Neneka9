@@ -1,43 +1,42 @@
-document.getElementById('final').addEventListenter('submit', function(event) {
+document.getElementById('final').addEventListener('submit', function(event) {
     event.preventDefault();
     alert("Form Submitted");
 
-    const first = document.getElementById('firstname').value;
-    const last = document.getElementById('lastname').value;
-    const interests = document.getElementById('interests').value;
-    const age = document.getElementById('age').value;
+    const category = document.getElementById('category').value;
+    const occasion = document.getElementById('occasion').value;
+    const comments = document.getElementById('comments').value;
 
-    if (!first || !last) {
-        alert("You need to enter your full name.");
+    if (category === "0") {
+        alert("You need to choose the type of food.");
         return;
     }
 
-    if (interests === "blank") {
+    if (occasion === "0") {
         alert("You need to choose your interests.");
         return;
     }
 
-    if (!age || age<18) {
-        alert("You need to be 18");
+    if (!comments) {
+        alert("Please write comments about your experience.");
         return;
     }
 
     const formData = {
-        first: first,
-        last: last,
-        interests: interests,
+        category: category,
+        occasion: occasion,
+        comments: comments,
     };
 
     console.log(formData);
 
     const xhr = new XMLHttpRequest();
-    xhr.open("GET", "formprocessing.json", true);
-    xhr.setRequestHeader("Constent-Type", "application/json;charset=UTF-8") ;
+    xhr.open("GET", "final.json", true);
+    xhr.setRequestHeader("Consent-Type", "application/json;charset=UTF-8") ;
     xhr.onreadystatechange = function () {
         if(xhr.readyState === 4 && xhr.status === 200) {
             const response = JSON.parse(xhr.responseText);
             document.getElementById("message").innerHTML = response.message;
-            document.getElementById("form").innerHTML = "";
+            document.getElementById("final").innerHTML = "";
         } else if (xhr.readyState === 4) {
             alert('Error submitting form.');
         }
