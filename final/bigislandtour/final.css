@@ -42,7 +42,9 @@ a:hover {
     border-bottom: 2px solid black;
 }
 
-
+.picture img {
+    width: 100%;
+}
 
 .photodiv {
     max-width: 85%;
@@ -144,6 +146,17 @@ form {
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+
+    .wrapper {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .picture {
+        width: 100%;
+        margin: 0;
+
     }
 
 }
