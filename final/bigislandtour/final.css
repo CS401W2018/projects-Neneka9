@@ -52,6 +52,11 @@ a:hover {
     width: 100%;
 }
 
+iframe {
+    display: block;
+    margin: 0 auto;
+}
+
 .photodiv {
     max-width: 85%;
 }
